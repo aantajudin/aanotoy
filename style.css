@@ -1,0 +1,127 @@
+:root {
+  --bg: #121212;
+  --text: #ffffff;
+  --subtext: #cccccc;
+  --btn-bg: #1f1f1f;
+  --footer: #444;
+}
+
+body.light {
+  --bg: #f5f5f5;
+  --text: #121212;
+  --subtext: #444;
+  --btn-bg: #e0e0e0;
+  --footer: #ccc;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+}
+
+#toggleMode {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: var(--btn-bg);
+  color: var(--text);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid var(--text);
+  margin-bottom: 1rem;
+}
+
+h1 {
+  margin: 0.5rem 0;
+}
+
+p {
+  color: var(--subtext);
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  padding: 0.8rem;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.youtube {
+  background-color: #FF0000;
+}
+
+.tiktok {
+  background: linear-gradient(45deg, #25f4ee, #fe2c55);
+}
+
+.instagram {
+  background: linear-gradient(45deg, #feda75, #d62976, #962fbf);
+}
+
+.gallery {
+  margin-top: 2rem;
+}
+
+.gallery h2 {
+  margin-bottom: 1rem;
+}
+
+.grid {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.grid img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.grid img:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  margin-top: 2rem;
+  font-size: 0.85rem;
+  color: var(--footer);
+}
